@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards</title>
+  <link rel="stylesheet" href="./css/style2.css">
+
+</head>
+
+<body>
+  <div class="screen1">
+    <h1 class="heading">Is your credit card number in a hacker’s database?</h1>
+    <p class="paragraph">You can easily find out now! All you need to do is enter its information here and we will
+      scan thousands of haker databases to see if any they have match yours.</p>
+    <form action="#" class="card__form"> 
+      
+        <div>
+          <label for="num">Credit card number:</label>
+          <input type="number" name="num" max="999999999999999" placeholder="5469520056738125" id="num"><br>
+        </div>
+
+        <div>
+          <label for="exp_date">Expiration date:</label>
+          <input type="number" id="exp_date" name="exp_date" placeholder="04.23" min="01.20" max="12.30"
+            class="short"><br>
+        </div>
+
+        <div>
+          <label for="zip_code">Your zip code:</label>
+          <input type="password" id="zip_code" name="zip_code" maxlength="3" minlength="3" placeholder="375"
+            class=short><br>
+        </div>
+
+        <div><input type="submit" class="button" value="SCAN DATABASE"></div>
+      </form>
+  </div>
+  <div class="page2">
+    <div class="screen2">
+      <h1 class="heading">Scanning Databases... </h1>
+      <div id="cssload-wrapper">
+        <div id="cssload-line">
+        </div>
+      </div>
+      <p class="paragraph" id="p2">Now scanning 3728 databases... 0 matches found</p>
+    </div>
+  </div>
+  <div class="page3">
+    <div class="screen3">
+      <div class="heading" id="cong">Congratulations!</div>
+      <div class="paragraph">Your card number did not show up in any hacker’s databases!</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
